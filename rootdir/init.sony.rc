@@ -1,5 +1,5 @@
 on init
-    export LD_SHIM_LIBS /system/lib/hw/camera.vendor.qcom.so|libshim_camera.so:/system/lib/libcald_pal.so|libshim_cald.so:/system/bin/mpdecision|libshim_mpdecision.so
+    export LD_SHIM_LIBS /system/lib/hw/camera.vendor.qcom.so|libshim_camera.so:/system/lib/libcald_pal.so|libshim_cald.so:/system/bin/mpdecision|libshim_mpdecision.so:/system/lib/libMPU3050.so|libshim_MPU3050.so
 
 on post-fs
     # create directory for hdcp
