@@ -336,11 +336,6 @@ service fm_dl /system/bin/sh /system/etc/init.qcom.fm.sh
     disabled
     oneshot
 
-service illumination /system/bin/illumination_service
-    class main
-    user root
-    socket illumination stream 0660 system camera
-
 service charger /sbin/healthd -c
     class charger
     seclabel u:r:healthd:s0
