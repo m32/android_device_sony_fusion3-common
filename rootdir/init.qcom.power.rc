@@ -56,6 +56,10 @@ on enable-low-power
     write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
     write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 53059
 
+    # Set cpu_boost parameters
+    write /sys/module/cpu_boost/parameters/input_boost_freq 1026000
+    write /sys/module/cpu_boost/parameters/input_boost_ms 40
+
     write /dev/cpuctl/cpu.notify_on_migrate 1
 
 on charger
