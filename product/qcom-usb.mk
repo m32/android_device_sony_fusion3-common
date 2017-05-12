@@ -5,5 +5,4 @@ PRODUCT_COPY_FILES += \
 
 # USB packages
 PRODUCT_PACKAGES += \
-    librs_jni \
-    com.android.future.usb.accessory
+    librs_jni
